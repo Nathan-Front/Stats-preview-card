@@ -44,6 +44,7 @@ p{
     line-height: 1.5em;
     font-size: 15px;
     font-weight: 400;
+    font-family: Lexend Deca,sans-serif;
 }
 ul{
     margin: 10% 0 0 0;
@@ -51,6 +52,7 @@ ul{
     display: flex;
     list-style: none;
     grid-gap: 10%;
+    font-family: Inter,sans-serif;
 }
 ul>li{
     color: hsl(0, 0%, 100%);
@@ -63,6 +65,7 @@ ul>li>span{
     font-weight: 400;
     font-size: 13px;
     display: block;
+    font-family: Lexend Deca,sans-serif;
 }
 @media screen and (max-width:1000px) {
     body{
