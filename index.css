@@ -1,0 +1,97 @@
+body{
+    width: 1440px;
+    margin: 0 auto;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(233, 47%, 7%);
+}
+.main-container{
+    margin: 0;
+    padding: 5%;
+    background-image: url(images/image-header-desktop.jpg), 
+    linear-gradient(hsl(277, 64%, 61%),hsl(277, 64%, 61%)
+    100%, transparent 100%);
+    background-blend-mode: overlay, color;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 50% 100%;
+    background-color: hsl(244, 38%, 16%);
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.main-container>*{
+    width: 40%;
+}
+h2{
+    margin: 0;
+    padding: 0;
+    color: hsl(0, 0%, 100%);
+    font-size: 1.8em;
+    font-weight: 700;
+    font-family: Inter,sans-serif;
+}
+h2>span{
+    color: hsl(277, 64%, 61%);
+}
+p{
+    margin: 5% 0 0 0;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.5em;
+    font-size: 15px;
+    font-weight: 400;
+}
+ul{
+    margin: 10% 0 0 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    grid-gap: 10%;
+}
+ul>li{
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 1.2em;
+}
+ul>li>span{
+    color: hsla(0, 0%, 100%, 0.6);
+    font-weight: 400;
+    font-size: 13px;
+    display: block;
+}
+@media screen and (max-width:1000px) {
+    body{
+        width: auto;
+        padding: 10% 5%;
+    }
+    .main-container{    
+        background-image: url(images/image-header-mobile.jpg), 
+        linear-gradient(hsl(277, 64%, 61%),hsl(277, 64%, 61%)
+        100%, transparent 100%);
+        background-position: top;
+        background-size: 100% 30%;
+        align-items: center;
+        text-align: center;
+        padding: 10%;
+    }
+
+    .main-container>*{
+        width: auto;
+    }
+    h2{
+        margin: 80% 0 0 0;
+    }
+    ul{
+        flex-direction: column;
+        grid-gap: unset;
+        margin: 5% 0 0 0;
+    }
+    ul>li{
+        margin: 10% 0 0 0;
+    }
+}
