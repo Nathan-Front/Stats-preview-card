@@ -14,7 +14,7 @@ body{
     background-image: url(images/image-header-desktop.jpg), 
     linear-gradient(hsl(277, 64%, 61%),hsl(277, 64%, 61%)
     100%, transparent 100%);
-    background-blend-mode: overlay, color;
+    background-blend-mode: luminosity, color;
     background-repeat: no-repeat;
     background-position: right;
     background-size: 50% 100%;
